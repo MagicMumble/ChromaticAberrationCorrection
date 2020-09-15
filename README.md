@@ -13,7 +13,7 @@ to match green and red (similarly green and blue) channels. Green channel was ch
 Program defines the centers and radii of circles by checking the luminance of each pixel (check the structure of pgm files). Supposingly luminance value is 
 decreasing by moving away from the circle center to its boundary.
 
-The main idea of the algorithm is to build polynomials from two arguments (coords x and y - circle center) which move red and blue channels (of the testing image)
+The main idea of the algorithm is to build polynomials from two arguments (coords x and y - circle center) which moves red and blue channels (of the testing image)
 to the green one. By firstly matching centers of all three channels and then every pixel of the red and blue channel images to the green one we'll get an image free 
 of chromatic aberration and be able to use these polynomials for any image with the same camera settings.
 
