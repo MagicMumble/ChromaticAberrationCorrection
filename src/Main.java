@@ -13,7 +13,7 @@ public class Main {
         if (args.length == 3) // only estimates and saves polynomial
             polyEstimation(args, color);
         else
-            System.out.println("Enter 3");
+            System.out.println("Enter .pgm file path and paths to two text files for writing down the polynomials");
     }
 
     public static void polyEstimation(String[] args, boolean color) throws IOException {
