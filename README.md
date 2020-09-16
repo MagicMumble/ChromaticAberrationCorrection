@@ -17,6 +17,17 @@ The main idea of the algorithm is to build polynomials from two arguments (coord
 to the green one. By firstly matching centers of all three channels and then every pixel of the red and blue channel images to the green one we'll get an image free 
 of chromatic aberration and be able to use these polynomials for any image with the same camera settings.
 
+# Building and running the project
+
+Build the project from the ChromaticAberrationCorrection/src directory with the command:
+
+    javac Main.java Matrix.java MyNum.java LMTacheC.java Image.java CCStats.java
+    
+Then run the project with command:
+
+    java -classpath . Main TestingImage.pgm pol_r.txt pol_b.txt
+
+
 
 
 
